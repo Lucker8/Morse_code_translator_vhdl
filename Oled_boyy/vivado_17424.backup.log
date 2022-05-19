@@ -1,0 +1,1514 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed May 18 09:12:16 2022
+# Process ID: 17424
+# Current directory: D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17176 D:\Uni\Semester4\Project\completed_project_parts\Fifo_to_oled\Oled_boyy\Oled_boyy.xpr
+# Log file: D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/vivado.log
+# Journal file: D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy\vivado.jou
+#-----------------------------------------------------------start_gui
+open_project D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.xpr
+Scanning sources...
+Finished scanning sources
+IINFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specifiedIINFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Apps/Xilinx/Vivado/2019.1/data/ip'.oopen_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 647.742 ; gain = 65.496uupdate_compile_order -fileset sources_1elaunch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_oled_connection' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj fifo_oled_connection_vhdl.prj"
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 659.547 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '10' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+"xelab -wto b7d505108c7c409cac91a51598e1b5b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fifo_oled_connection_behav xil_defaultlib.fifo_oled_connection -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto b7d505108c7c409cac91a51598e1b5b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fifo_oled_connection_behav xil_defaultlib.fifo_oled_connection -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 659.547 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fifo_oled_connection_behav -key {Behavioral:sim_1:Functional:fifo_oled_connection} -tclbatch {fifo_oled_connection.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source fifo_oled_connection.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 682.402 ; gain = 22.855
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fifo_oled_connection_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:35 . Memory (MB): peak = 682.402 ; gain = 22.855
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/fifo_oled_connection/clkC} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/fifo_oled_connection/inputC} -radix hex {1 0ns}
+run 20 ms
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 704.934 ; gain = 0.000
+add_force {/fifo_oled_connection/enb_in} -radix hex {1 0ns}
+run 20 ms
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 704.934 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 724.355 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_oled_connection' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj fifo_oled_connection_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_oled_connection.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fifo_oled_connection'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+"xelab -wto b7d505108c7c409cac91a51598e1b5b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fifo_oled_connection_behav xil_defaultlib.fifo_oled_connection -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto b7d505108c7c409cac91a51598e1b5b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fifo_oled_connection_behav xil_defaultlib.fifo_oled_connection -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.mem_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.FF [ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.task1 [task1_default]
+Compiling architecture behavioral of entity xil_defaultlib.spi_ctrl [spi_ctrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.delay [delay_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_init [oled_init_default]
+Compiling architecture behavioral of entity xil_defaultlib.ascii_rom [ascii_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_ex [oled_ex_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_ctrl [oled_ctrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.ram_8by32 [ram_8by32_default]
+Compiling architecture behavioral of entity xil_defaultlib.fifo_w_signal_control [fifo_w_signal_control_default]
+Compiling architecture behavioral of entity xil_defaultlib.fifo_oled_connection
+Built simulation snapshot fifo_oled_connection_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim/xsim.dir/fifo_oled_connection_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim/xsim.dir/fifo_oled_connection_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed May 18 09:26:37 2022. For additional details about this file, please refer to the WebTalk help file at D:/Apps/Xilinx/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Wed May 18 09:26:37 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 724.355 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fifo_oled_connection_behav -key {Behavioral:sim_1:Functional:fifo_oled_connection} -tclbatch {fifo_oled_connection.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source fifo_oled_connection.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fifo_oled_connection_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 729.988 ; gain = 5.633
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/fifo_oled_connection/clkC} -radix hex {1 0ns}
+add_force {/fifo_oled_connection/clkC} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/fifo_oled_connection/inputC} -radix hex {1 0ns}
+run 20 ms
+run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 729.988 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_oled_connection' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj fifo_oled_connection_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_oled_connection.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fifo_oled_connection'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+"xelab -wto b7d505108c7c409cac91a51598e1b5b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fifo_oled_connection_behav xil_defaultlib.fifo_oled_connection -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto b7d505108c7c409cac91a51598e1b5b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fifo_oled_connection_behav xil_defaultlib.fifo_oled_connection -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.mem_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.FF [ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.task1 [task1_default]
+Compiling architecture behavioral of entity xil_defaultlib.spi_ctrl [spi_ctrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.delay [delay_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_init [oled_init_default]
+Compiling architecture behavioral of entity xil_defaultlib.ascii_rom [ascii_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_ex [oled_ex_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_ctrl [oled_ctrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.ram_8by32 [ram_8by32_default]
+Compiling architecture behavioral of entity xil_defaultlib.fifo_w_signal_control [fifo_w_signal_control_default]
+Compiling architecture behavioral of entity xil_defaultlib.fifo_oled_connection
+Built simulation snapshot fifo_oled_connection_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fifo_oled_connection_behav -key {Behavioral:sim_1:Functional:fifo_oled_connection} -tclbatch {fifo_oled_connection.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source fifo_oled_connection.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fifo_oled_connection_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 729.988 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/fifo_oled_connection/clkC} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/fifo_oled_connection/inputC} -radix hex {1 0ns}
+run 20 ms
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 729.988 ; gain = 0.000
+add_force {/fifo_oled_connection/enb_in} -radix hex {1 0ns}
+run 20 ms
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 729.988 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_oled_connection' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj fifo_oled_connection_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_oled_connection.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fifo_oled_connection'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+"xelab -wto b7d505108c7c409cac91a51598e1b5b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fifo_oled_connection_behav xil_defaultlib.fifo_oled_connection -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto b7d505108c7c409cac91a51598e1b5b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fifo_oled_connection_behav xil_defaultlib.fifo_oled_connection -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.mem_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.FF [ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.task1 [task1_default]
+Compiling architecture behavioral of entity xil_defaultlib.spi_ctrl [spi_ctrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.delay [delay_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_init [oled_init_default]
+Compiling architecture behavioral of entity xil_defaultlib.ascii_rom [ascii_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_ex [oled_ex_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_ctrl [oled_ctrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.ram_8by32 [ram_8by32_default]
+Compiling architecture behavioral of entity xil_defaultlib.fifo_w_signal_control [fifo_w_signal_control_default]
+Compiling architecture behavioral of entity xil_defaultlib.fifo_oled_connection
+Built simulation snapshot fifo_oled_connection_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fifo_oled_connection_behav -key {Behavioral:sim_1:Functional:fifo_oled_connection} -tclbatch {fifo_oled_connection.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source fifo_oled_connection.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fifo_oled_connection_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 732.457 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/fifo_oled_connection/clkC} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/fifo_oled_connection/inputC} -radix hex {1 0ns}
+run 20 ms
+ERROR: Index 4 out of bound 0 to 3
+Time: 1215 ns  Iteration: 0  Process: /fifo_oled_connection/oled/Example/blank_p
+  File: D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.srcs/sources_1/new/oled_ex.vhd
+
+HDL Line: D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.srcs/sources_1/new/oled_ex.vhd:221
+run 20 ms
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+run 20 ms
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_oled_connection' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj fifo_oled_connection_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+"xelab -wto b7d505108c7c409cac91a51598e1b5b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fifo_oled_connection_behav xil_defaultlib.fifo_oled_connection -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto b7d505108c7c409cac91a51598e1b5b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fifo_oled_connection_behav xil_defaultlib.fifo_oled_connection -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fifo_oled_connection_behav -key {Behavioral:sim_1:Functional:fifo_oled_connection} -tclbatch {fifo_oled_connection.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source fifo_oled_connection.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fifo_oled_connection_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 738.305 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/fifo_oled_connection/clkC} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/fifo_oled_connection/inputC} -radix hex {1 0ns}
+run 20 ms
+ERROR: Index 4 out of bound 0 to 3
+Time: 1215 ns  Iteration: 0  Process: /fifo_oled_connection/oled/Example/blank_p
+  File: D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.srcs/sources_1/new/oled_ex.vhd
+
+HDL Line: D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.srcs/sources_1/new/oled_ex.vhd:221
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_oled_connection' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj fifo_oled_connection_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_oled_connection.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fifo_oled_connection'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+"xelab -wto b7d505108c7c409cac91a51598e1b5b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fifo_oled_connection_behav xil_defaultlib.fifo_oled_connection -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto b7d505108c7c409cac91a51598e1b5b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fifo_oled_connection_behav xil_defaultlib.fifo_oled_connection -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.mem_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.FF [ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.task1 [task1_default]
+Compiling architecture behavioral of entity xil_defaultlib.spi_ctrl [spi_ctrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.delay [delay_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_init [oled_init_default]
+Compiling architecture behavioral of entity xil_defaultlib.ascii_rom [ascii_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_ex [oled_ex_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_ctrl [oled_ctrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.ram_8by32 [ram_8by32_default]
+Compiling architecture behavioral of entity xil_defaultlib.fifo_w_signal_control [fifo_w_signal_control_default]
+Compiling architecture behavioral of entity xil_defaultlib.fifo_oled_connection
+Built simulation snapshot fifo_oled_connection_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fifo_oled_connection_behav -key {Behavioral:sim_1:Functional:fifo_oled_connection} -tclbatch {fifo_oled_connection.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source fifo_oled_connection.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fifo_oled_connection_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 779.496 ; gain = 2.863
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/fifo_oled_connection/clkC} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/fifo_oled_connection/inputC} -radix hex {1 0ns}
+run 20 ms
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 817.113 ; gain = 0.000
+add_force {/fifo_oled_connection/enb_in} -radix hex {1 0ns}
+run 20 ms
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 817.113 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed May 18 09:52:09 2022] Launched synth_1...
+Run output will be captured here: D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Wed May 18 09:53:35 2022] Launched impl_1...
+Run output will be captured here: D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May 18 09:55:13 2022] Launched impl_1...
+Run output will be captured here: D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 835.832 ; gain = 13.730
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248AC8C40
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1958.879 ; gain = 1123.047
+set_property PROGRAM.FILE {D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.runs/impl_1/fifo_oled_connection.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.runs/impl_1/fifo_oled_connection.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_oled_connection' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj fifo_oled_connection_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+"xelab -wto b7d505108c7c409cac91a51598e1b5b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fifo_oled_connection_behav xil_defaultlib.fifo_oled_connection -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto b7d505108c7c409cac91a51598e1b5b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fifo_oled_connection_behav xil_defaultlib.fifo_oled_connection -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fifo_oled_connection_behav -key {Behavioral:sim_1:Functional:fifo_oled_connection} -tclbatch {fifo_oled_connection.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source fifo_oled_connection.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fifo_oled_connection_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1994.219 ; gain = 4.348
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/fifo_oled_connection/clkC} -radix hex {1 0ns}
+add_force {/fifo_oled_connection/clkC} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/fifo_oled_connection/inputC} -radix hex {1 0ns}
+run 20 ms
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2001.738 ; gain = 0.000
+add_force {/fifo_oled_connection/enb_in} -radix hex {1 0ns}
+run 10 ns
+run 20 ms
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2056.141 ; gain = 46.867
+add_force {/fifo_oled_connection/inputC} -radix hex {2 0ns}
+add_force {/fifo_oled_connection/enb_in} -radix hex {0 0ns}
+run 20 ms
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2059.453 ; gain = 0.000
+add_force {/fifo_oled_connection/enb_in} -radix hex {1 0ns}
+run 20 ms
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2059.453 ; gain = 0.000
+run 20 ms
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2060.172 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_oled_connection' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj fifo_oled_connection_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Uni/Semester4/Project/completed_project_parts/fifo_test_2/fifo_test_2.srcs/sources_1/new/fifo_w_signal_control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fifo_w_signal_control'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.srcs/sources_1/new/oled_ex.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'oled_ex'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_oled_connection.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fifo_oled_connection'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+"xelab -wto b7d505108c7c409cac91a51598e1b5b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fifo_oled_connection_behav xil_defaultlib.fifo_oled_connection -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto b7d505108c7c409cac91a51598e1b5b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fifo_oled_connection_behav xil_defaultlib.fifo_oled_connection -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.mem_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.FF [ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.task1 [task1_default]
+Compiling architecture behavioral of entity xil_defaultlib.spi_ctrl [spi_ctrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.delay [delay_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_init [oled_init_default]
+Compiling architecture behavioral of entity xil_defaultlib.ascii_rom [ascii_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_ex [oled_ex_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_ctrl [oled_ctrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.ram_8by32 [ram_8by32_default]
+Compiling architecture behavioral of entity xil_defaultlib.fifo_w_signal_control [fifo_w_signal_control_default]
+Compiling architecture behavioral of entity xil_defaultlib.fifo_oled_connection
+Built simulation snapshot fifo_oled_connection_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fifo_oled_connection_behav -key {Behavioral:sim_1:Functional:fifo_oled_connection} -tclbatch {fifo_oled_connection.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source fifo_oled_connection.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fifo_oled_connection_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 2062.547 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/fifo_oled_connection/clkC} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/fifo_oled_connection/inputC} -radix hex {1 0ns}
+run 20 ms
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 2062.547 ; gain = 0.000
+add_force {/fifo_oled_connection/enb_in} -radix hex {1 0ns}
+run 20 ms
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2062.547 ; gain = 0.000
+add_force {/fifo_oled_connection/enb_in} -radix hex {0 0ns}
+add_force {/fifo_oled_connection/inputC} -radix hex {2 0ns}
+run 20 ms
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2062.547 ; gain = 0.000
+add_force {/fifo_oled_connection/enb_in} -radix hex {1 0ns}
+run 20 ms
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2062.547 ; gain = 0.000
+run 20 ms
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2062.547 ; gain = 0.000
+run 20 ms
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2062.547 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_oled_connection' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj fifo_oled_connection_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_oled_connection.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fifo_oled_connection'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+"xelab -wto b7d505108c7c409cac91a51598e1b5b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fifo_oled_connection_behav xil_defaultlib.fifo_oled_connection -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto b7d505108c7c409cac91a51598e1b5b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fifo_oled_connection_behav xil_defaultlib.fifo_oled_connection -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.mem_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.FF [ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.task1 [task1_default]
+Compiling architecture behavioral of entity xil_defaultlib.spi_ctrl [spi_ctrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.delay [delay_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_init [oled_init_default]
+Compiling architecture behavioral of entity xil_defaultlib.ascii_rom [ascii_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_ex [oled_ex_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_ctrl [oled_ctrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.ram_8by32 [ram_8by32_default]
+Compiling architecture behavioral of entity xil_defaultlib.fifo_w_signal_control [fifo_w_signal_control_default]
+Compiling architecture behavioral of entity xil_defaultlib.fifo_oled_connection
+Built simulation snapshot fifo_oled_connection_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fifo_oled_connection_behav -key {Behavioral:sim_1:Functional:fifo_oled_connection} -tclbatch {fifo_oled_connection.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source fifo_oled_connection.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fifo_oled_connection_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2062.547 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/fifo_oled_connection/clkC} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+remove_forces { {/fifo_oled_connection/inputC} }
+add_force {/fifo_oled_connection/inputC} -radix hex {1 0ns}
+run 25 ms
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2062.602 ; gain = 0.000
+add_force {/fifo_oled_connection/enb_in} -radix hex {1 0ns}
+run 25 ms
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2062.602 ; gain = 0.000
+add_force {/fifo_oled_connection/enb_in} -radix hex {0 0ns}
+add_force {/fifo_oled_connection/inputC} -radix hex {2 0ns}
+run 25 ms
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2062.602 ; gain = 0.000
+add_force {/fifo_oled_connection/enb_in} -radix hex {1 0ns}
+run 25 ms
+run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 2062.602 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May 18 10:28:01 2022] Launched synth_1...
+Run output will be captured here: D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.runs/synth_1/runme.log
+[Wed May 18 10:28:01 2022] Launched impl_1...
+Run output will be captured here: D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May 18 10:32:04 2022] Launched synth_1...
+Run output will be captured here: D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.runs/synth_1/runme.log
+[Wed May 18 10:32:04 2022] Launched impl_1...
+Run output will be captured here: D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248AC8C40
+set_property PROGRAM.FILE {D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.runs/impl_1/fifo_oled_connection.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.runs/impl_1/fifo_oled_connection.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+add_files -norecurse D:/Uni/Semester4/Project/completed_project_parts/easy_timer/easy_timer.srcs/sources_1/new/timer_variable.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_oled_connection' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj fifo_oled_connection_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Uni/Semester4/Project/completed_project_parts/easy_timer/easy_timer.srcs/sources_1/new/timer_variable.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'timer_variable'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_oled_connection.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fifo_oled_connection'
+ERROR: [VRFC 10-1471] type error near clkc ; current type std_logic; expected type bit [D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_oled_connection.vhd:126]
+ERROR: [VRFC 10-1471] type error near slowclk_enb ; current type std_logic; expected type bit [D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_oled_connection.vhd:127]
+ERROR: [VRFC 10-1471] type error near slowclk_rst ; current type std_logic; expected type bit [D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_oled_connection.vhd:128]
+ERROR: [VRFC 10-1471] type error near slowclk_out ; current type std_logic; expected type bit [D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_oled_connection.vhd:129]
+ERROR: [VRFC 10-3782] unit 'behavioral' ignored due to previous errors [D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_oled_connection.vhd:31]
+INFO: [VRFC 10-3070] VHDL file 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_oled_connection.vhd' ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_oled_connection' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj fifo_oled_connection_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Uni/Semester4/Project/completed_project_parts/easy_timer/easy_timer.srcs/sources_1/new/timer_variable.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'timer_variable'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_oled_connection.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fifo_oled_connection'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+"xelab -wto b7d505108c7c409cac91a51598e1b5b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fifo_oled_connection_behav xil_defaultlib.fifo_oled_connection -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto b7d505108c7c409cac91a51598e1b5b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fifo_oled_connection_behav xil_defaultlib.fifo_oled_connection -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.mem_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.FF [ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.task1 [task1_default]
+Compiling architecture behavioral of entity xil_defaultlib.timer_variable [timer_variable_default]
+Compiling architecture behavioral of entity xil_defaultlib.spi_ctrl [spi_ctrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.delay [delay_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_init [oled_init_default]
+Compiling architecture behavioral of entity xil_defaultlib.ascii_rom [ascii_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_ex [oled_ex_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_ctrl [oled_ctrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.ram_8by32 [ram_8by32_default]
+Compiling architecture behavioral of entity xil_defaultlib.fifo_w_signal_control [fifo_w_signal_control_default]
+Compiling architecture behavioral of entity xil_defaultlib.fifo_oled_connection
+Built simulation snapshot fifo_oled_connection_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2825.281 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fifo_oled_connection_behav -key {Behavioral:sim_1:Functional:fifo_oled_connection} -tclbatch {fifo_oled_connection.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source fifo_oled_connection.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fifo_oled_connection_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 2825.281 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/fifo_oled_connection/clkC} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/fifo_oled_connection/fifo_to_oled} -radix hex {1 0ns}
+run 25 ms
+ERROR: Index 4 out of bound 0 to 3
+Time: 3625 ns  Iteration: 0  Process: /fifo_oled_connection/oled/Example/blank_p
+  File: D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.srcs/sources_1/new/oled_ex.vhd
+
+HDL Line: D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.srcs/sources_1/new/oled_ex.vhd:222
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 25 ms
+ERROR: Index 4 out of bound 0 to 3
+Time: 3625 ns  Iteration: 0  Process: /fifo_oled_connection/oled/Example/blank_p
+  File: D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.srcs/sources_1/new/oled_ex.vhd
+
+HDL Line: D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.srcs/sources_1/new/oled_ex.vhd:222
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_oled_connection' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj fifo_oled_connection_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Uni/Semester4/Project/completed_project_parts/easy_timer/easy_timer.srcs/sources_1/new/timer_variable.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'timer_variable'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+"xelab -wto b7d505108c7c409cac91a51598e1b5b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fifo_oled_connection_behav xil_defaultlib.fifo_oled_connection -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto b7d505108c7c409cac91a51598e1b5b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fifo_oled_connection_behav xil_defaultlib.fifo_oled_connection -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.mem_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.FF [ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.task1 [task1_default]
+Compiling architecture behavioral of entity xil_defaultlib.timer_variable [timer_variable_default]
+Compiling architecture behavioral of entity xil_defaultlib.spi_ctrl [spi_ctrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.delay [delay_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_init [oled_init_default]
+Compiling architecture behavioral of entity xil_defaultlib.ascii_rom [ascii_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_ex [oled_ex_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_ctrl [oled_ctrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.ram_8by32 [ram_8by32_default]
+Compiling architecture behavioral of entity xil_defaultlib.fifo_w_signal_control [fifo_w_signal_control_default]
+Compiling architecture behavioral of entity xil_defaultlib.fifo_oled_connection
+Built simulation snapshot fifo_oled_connection_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fifo_oled_connection_behav -key {Behavioral:sim_1:Functional:fifo_oled_connection} -tclbatch {fifo_oled_connection.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source fifo_oled_connection.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fifo_oled_connection_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2825.281 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/fifo_oled_connection/clkC} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/fifo_oled_connection/clkC} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+run 25 ms
+ERROR: Index 4 out of bound 0 to 3
+Time: 3625 ns  Iteration: 0  Process: /fifo_oled_connection/oled/Example/blank_p
+  File: D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.srcs/sources_1/new/oled_ex.vhd
+
+HDL Line: D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.srcs/sources_1/new/oled_ex.vhd:222
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_oled_connection' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj fifo_oled_connection_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Uni/Semester4/Project/completed_project_parts/easy_timer/easy_timer.srcs/sources_1/new/timer_variable.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'timer_variable'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+"xelab -wto b7d505108c7c409cac91a51598e1b5b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fifo_oled_connection_behav xil_defaultlib.fifo_oled_connection -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto b7d505108c7c409cac91a51598e1b5b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fifo_oled_connection_behav xil_defaultlib.fifo_oled_connection -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.mem_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.FF [ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.task1 [task1_default]
+Compiling architecture behavioral of entity xil_defaultlib.timer_variable [timer_variable_default]
+Compiling architecture behavioral of entity xil_defaultlib.spi_ctrl [spi_ctrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.delay [delay_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_init [oled_init_default]
+Compiling architecture behavioral of entity xil_defaultlib.ascii_rom [ascii_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_ex [oled_ex_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_ctrl [oled_ctrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.ram_8by32 [ram_8by32_default]
+Compiling architecture behavioral of entity xil_defaultlib.fifo_w_signal_control [fifo_w_signal_control_default]
+Compiling architecture behavioral of entity xil_defaultlib.fifo_oled_connection
+Built simulation snapshot fifo_oled_connection_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fifo_oled_connection_behav -key {Behavioral:sim_1:Functional:fifo_oled_connection} -tclbatch {fifo_oled_connection.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source fifo_oled_connection.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fifo_oled_connection_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 2825.281 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_oled_connection' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj fifo_oled_connection_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_oled_connection.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fifo_oled_connection'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+"xelab -wto b7d505108c7c409cac91a51598e1b5b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fifo_oled_connection_behav xil_defaultlib.fifo_oled_connection -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto b7d505108c7c409cac91a51598e1b5b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fifo_oled_connection_behav xil_defaultlib.fifo_oled_connection -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.mem_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.FF [ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.task1 [task1_default]
+Compiling architecture behavioral of entity xil_defaultlib.timer_variable [timer_variable_default]
+Compiling architecture behavioral of entity xil_defaultlib.spi_ctrl [spi_ctrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.delay [delay_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_init [oled_init_default]
+Compiling architecture behavioral of entity xil_defaultlib.ascii_rom [ascii_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_ex [oled_ex_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_ctrl [oled_ctrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.ram_8by32 [ram_8by32_default]
+Compiling architecture behavioral of entity xil_defaultlib.fifo_w_signal_control [fifo_w_signal_control_default]
+Compiling architecture behavioral of entity xil_defaultlib.fifo_oled_connection
+Built simulation snapshot fifo_oled_connection_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fifo_oled_connection_behav -key {Behavioral:sim_1:Functional:fifo_oled_connection} -tclbatch {fifo_oled_connection.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source fifo_oled_connection.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fifo_oled_connection_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2825.281 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/fifo_oled_connection/clkC} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/fifo_oled_connection/inputC} -radix hex {1 0ns}
+run 25 ms
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2825.281 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_oled_connection' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj fifo_oled_connection_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Uni/Semester4/Project/completed_project_parts/easy_timer/easy_timer.srcs/sources_1/new/timer_variable.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'timer_variable'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+"xelab -wto b7d505108c7c409cac91a51598e1b5b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fifo_oled_connection_behav xil_defaultlib.fifo_oled_connection -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto b7d505108c7c409cac91a51598e1b5b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fifo_oled_connection_behav xil_defaultlib.fifo_oled_connection -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.mem_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.FF [ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.task1 [task1_default]
+Compiling architecture behavioral of entity xil_defaultlib.timer_variable [timer_variable_default]
+Compiling architecture behavioral of entity xil_defaultlib.spi_ctrl [spi_ctrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.delay [delay_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_init [oled_init_default]
+Compiling architecture behavioral of entity xil_defaultlib.ascii_rom [ascii_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_ex [oled_ex_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_ctrl [oled_ctrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.ram_8by32 [ram_8by32_default]
+Compiling architecture behavioral of entity xil_defaultlib.fifo_w_signal_control [fifo_w_signal_control_default]
+Compiling architecture behavioral of entity xil_defaultlib.fifo_oled_connection
+Built simulation snapshot fifo_oled_connection_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fifo_oled_connection_behav -key {Behavioral:sim_1:Functional:fifo_oled_connection} -tclbatch {fifo_oled_connection.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source fifo_oled_connection.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fifo_oled_connection_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2825.281 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/fifo_oled_connection/clkC} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/fifo_oled_connection/inputC} -radix hex {1 0ns}
+run 25 ms
+run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2825.281 ; gain = 0.000
+add_force {/fifo_oled_connection/enb_in} -radix hex {1 0ns}
+run 25 ms
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2825.281 ; gain = 0.000
+run 25 ms
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2825.281 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_oled_connection' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj fifo_oled_connection_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_oled_connection.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fifo_oled_connection'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+"xelab -wto b7d505108c7c409cac91a51598e1b5b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fifo_oled_connection_behav xil_defaultlib.fifo_oled_connection -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto b7d505108c7c409cac91a51598e1b5b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fifo_oled_connection_behav xil_defaultlib.fifo_oled_connection -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.mem_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.FF [ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.task1 [task1_default]
+Compiling architecture behavioral of entity xil_defaultlib.timer_variable [timer_variable_default]
+Compiling architecture behavioral of entity xil_defaultlib.spi_ctrl [spi_ctrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.delay [delay_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_init [oled_init_default]
+Compiling architecture behavioral of entity xil_defaultlib.ascii_rom [ascii_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_ex [oled_ex_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_ctrl [oled_ctrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.ram_8by32 [ram_8by32_default]
+Compiling architecture behavioral of entity xil_defaultlib.fifo_w_signal_control [fifo_w_signal_control_default]
+Compiling architecture behavioral of entity xil_defaultlib.fifo_oled_connection
+Built simulation snapshot fifo_oled_connection_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fifo_oled_connection_behav -key {Behavioral:sim_1:Functional:fifo_oled_connection} -tclbatch {fifo_oled_connection.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source fifo_oled_connection.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fifo_oled_connection_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2825.281 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/fifo_oled_connection/clkC} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/fifo_oled_connection/inputC} -radix hex {1 0ns}
+run 25 ms
+run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 2825.281 ; gain = 0.000
+add_force {/fifo_oled_connection/enb_in} -radix hex {1 0ns}
+run 25 ms
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2825.281 ; gain = 0.000
+run 25 ms
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2825.281 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May 18 11:40:41 2022] Launched synth_1...
+Run output will be captured here: D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.runs/synth_1/runme.log
+[Wed May 18 11:40:42 2022] Launched impl_1...
+Run output will be captured here: D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248AC8C40
+set_property PROGRAM.FILE {D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.runs/impl_1/fifo_oled_connection.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.runs/impl_1/fifo_oled_connection.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248AC8C40
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248AC8C40
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_oled_connection' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj fifo_oled_connection_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_oled_connection.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fifo_oled_connection'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+"xelab -wto b7d505108c7c409cac91a51598e1b5b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fifo_oled_connection_behav xil_defaultlib.fifo_oled_connection -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto b7d505108c7c409cac91a51598e1b5b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fifo_oled_connection_behav xil_defaultlib.fifo_oled_connection -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.mem_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.FF [ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.task1 [task1_default]
+Compiling architecture behavioral of entity xil_defaultlib.timer_variable [timer_variable_default]
+Compiling architecture behavioral of entity xil_defaultlib.spi_ctrl [spi_ctrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.delay [delay_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_init [oled_init_default]
+Compiling architecture behavioral of entity xil_defaultlib.ascii_rom [ascii_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_ex [oled_ex_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_ctrl [oled_ctrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.ram_8by32 [ram_8by32_default]
+Compiling architecture behavioral of entity xil_defaultlib.fifo_w_signal_control [fifo_w_signal_control_default]
+Compiling architecture behavioral of entity xil_defaultlib.fifo_oled_connection
+Built simulation snapshot fifo_oled_connection_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fifo_oled_connection_behav -key {Behavioral:sim_1:Functional:fifo_oled_connection} -tclbatch {fifo_oled_connection.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source fifo_oled_connection.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fifo_oled_connection_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 2825.281 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/fifo_oled_connection/clkC} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/fifo_oled_connection/inputC} -radix hex {1 0ns}
+run 25 ms
+run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 2825.281 ; gain = 0.000
+add_force {/fifo_oled_connection/enb_in} -radix hex {1 0ns}
+run 25 ms
+run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2825.281 ; gain = 0.000
+add_force {/fifo_oled_connection/enb_in} -radix hex {0 0ns}
+run 25 ms
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2825.281 ; gain = 0.000
+add_force {/fifo_oled_connection/enb_in} -radix hex {1 0ns}
+add_force {/fifo_oled_connection/enb_in} -radix hex {1 0ns}
+add_force {/fifo_oled_connection/fifo_to_oled} -radix hex {2 0ns}
+run 25 ms
+run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 2825.281 ; gain = 0.000
+run 25 ms
+run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2825.281 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_oled_connection' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj fifo_oled_connection_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Uni/Semester4/Project/completed_project_parts/easy_timer/easy_timer.srcs/sources_1/new/timer_variable.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'timer_variable'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+"xelab -wto b7d505108c7c409cac91a51598e1b5b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fifo_oled_connection_behav xil_defaultlib.fifo_oled_connection -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Apps/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto b7d505108c7c409cac91a51598e1b5b7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fifo_oled_connection_behav xil_defaultlib.fifo_oled_connection -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.mem_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.FF [ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.task1 [task1_default]
+Compiling architecture behavioral of entity xil_defaultlib.timer_variable [timer_variable_default]
+Compiling architecture behavioral of entity xil_defaultlib.spi_ctrl [spi_ctrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.delay [delay_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_init [oled_init_default]
+Compiling architecture behavioral of entity xil_defaultlib.ascii_rom [ascii_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_ex [oled_ex_default]
+Compiling architecture behavioral of entity xil_defaultlib.oled_ctrl [oled_ctrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.ram_8by32 [ram_8by32_default]
+Compiling architecture behavioral of entity xil_defaultlib.fifo_w_signal_control [fifo_w_signal_control_default]
+Compiling architecture behavioral of entity xil_defaultlib.fifo_oled_connection
+Built simulation snapshot fifo_oled_connection_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fifo_oled_connection_behav -key {Behavioral:sim_1:Functional:fifo_oled_connection} -tclbatch {fifo_oled_connection.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source fifo_oled_connection.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2825.281 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fifo_oled_connection_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 2825.281 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+add_force {/fifo_oled_connection/clkC} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+add_force {/fifo_oled_connection/inputC} -radix hex {1 0ns}
+run 25 ms
+run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 2825.281 ; gain = 0.000
+add_force {/fifo_oled_connection/enb_in} -radix hex {1 0ns}
+run 25 ms
+run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2825.281 ; gain = 0.000
+add_force {/fifo_oled_connection/enb_in} -radix hex {0 0ns}
+add_force {/fifo_oled_connection/inputC} -radix hex {2 0ns}
+run 25 ms
+run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 2825.281 ; gain = 0.000
+add_force {/fifo_oled_connection/enb_in} -radix hex {1 0ns}
+run 25 ms
+run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2825.281 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May 18 12:42:26 2022] Launched synth_1...
+Run output will be captured here: D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.runs/synth_1/runme.log
+[Wed May 18 12:42:26 2022] Launched impl_1...
+Run output will be captured here: D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.runs/impl_1/fifo_oled_connection.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.runs/impl_1/fifo_oled_connection.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.runs/impl_1/fifo_oled_connection.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.runs/impl_1/fifo_oled_connection.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.runs/impl_1/fifo_oled_connection.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 18 13:51:25 2022...

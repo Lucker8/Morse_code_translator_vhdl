@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1652965077">
+  <File Type="BITSTR-BMM" Name="mejn_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="mejn_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="mejn_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="mejn_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="mejn.tcl"/>
+  <File Type="OPT-TIMING" Name="mejn_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="mejn_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="mejn_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="mejn_reports.tcl"/>
+  <File Type="OPT-DRC" Name="mejn_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="mejn.hwdef"/>
+  <File Type="PWROPT-DCP" Name="mejn_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="mejn_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="mejn_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="mejn_placed.dcp"/>
+  <File Type="PLACE-IO" Name="mejn_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="mejn_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="mejn_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="mejn_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="mejn_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="mejn_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="mejn_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="mejn.bgn"/>
+  <File Type="PLACE-TIMING" Name="mejn_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="mejn_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="mejn.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="mejn_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="mejn_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="mejn_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="mejn.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="mejn_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="mejn_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="mejn_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="mejn_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="mejn_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="mejn_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="mejn.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="mejn_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="mejn.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="mejn_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="mejn_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="mejn.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="mejn_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="mejn_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="mejn_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="mejn_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="mejn_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="mejn_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="mejn_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="mejn_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="mejn_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="mejn_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="mejn_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="mejn_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="mejn_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="mejn_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="mejn_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="mejn_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="mejn_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="mejn_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="mejn_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="mejn.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="mejn_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="mejn.rbt"/>
+  <File Type="BITSTR-NKY" Name="mejn.nky"/>
+  <File Type="BG-DRC" Name="mejn.drc"/>
+  <File Type="RDI-RDI" Name="mejn.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/FF.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/FF.vhd"/>
+        <Attr Name="ImportTime" Val="1652341109"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ascii.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/debouncer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/debouncer.vhd"/>
+        <Attr Name="ImportTime" Val="1652341105"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/SPRO4/debouncer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Translation1/Translation1.srcs/sources_1/imports/SPRO4/debouncer.vhd"/>
+        <Attr Name="ImportTime" Val="1652778299"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/delay.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/SPRO4/dit_dah.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Translation1/Translation1.srcs/sources_1/imports/SPRO4/dit_dah.vhd"/>
+        <Attr Name="ImportTime" Val="1652871466"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Raul/Downloads/ram_8by32.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fifo_oled_connection.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fifo_w_signal_control.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/oled_ctrl.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/oled_ex.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/oled_init.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/SPRO4/pmod_adc.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Translation1/Translation1.srcs/sources_1/imports/SPRO4/pmod_adc.vhd"/>
+        <Attr Name="ImportTime" Val="1652862704"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/pulse_stable_conversion.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/SPRO4/signal_debouncer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Translation1/Translation1.srcs/sources_1/imports/SPRO4/signal_debouncer.vhd"/>
+        <Attr Name="ImportTime" Val="1652778310"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/spi_ctrl.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/timer_variable.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/translation_interface.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Translation1/Translation1.srcs/sources_1/imports/new/translation_interface.vhd"/>
+        <Attr Name="ImportTime" Val="1652880055"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/v2.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Translation1/Translation1.srcs/sources_1/new/v2.vhd"/>
+        <Attr Name="ImportTime" Val="1652880022"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mejn.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/SPRO4/FF.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Translation1/Translation1.srcs/sources_1/imports/SPRO4/FF.vhd"/>
+        <Attr Name="ImportTime" Val="1652778307"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="mejn"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/Oled_constr.xdc">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/Mejn_const.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/Mejn_const.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

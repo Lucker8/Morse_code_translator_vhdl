@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu May 19 10:08:21 2022
+# Process ID: 4780
+# Current directory: D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1856 D:\Uni\Semester4\Project\completed_project_parts\Fifo_to_oled\Oled_boyy\Oled_boyy.xpr
+# Log file: D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/vivado.log
+# Journal file: D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source fifo_oled_connection.tcl
+restart
+add_force {/fifo_oled_connection/clkC} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+run 50 ns
+restart
+add_force {/fifo_oled_connection/inputC} -radix hex {0 0ns}
+add_force {/fifo_oled_connection/clkC} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+run 50 ns
+add_force {/fifo_oled_connection/inputC} -radix hex {1 0ns} -cancel_after 10ns
+run 50 ns
+restart
+add_force {/fifo_oled_connection/inputC} -radix hex {0 0ns}
+add_force {/fifo_oled_connection/clkC} -radix hex {0 0ns} {1 5000ps} -repeat_every 10000ps
+run 50 ns
+add_force {/fifo_oled_connection/inputC} -radix hex {1 0ns}
+run 10 ns
+add_force {/fifo_oled_connection/inputC} -radix hex {0 0ns}
+run 10 ns
+run 10 ns

@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed May 18 14:02:51 2022
+# Process ID: 14660
+# Current directory: D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7484 D:\Uni\Semester4\Project\completed_project_parts\Fifo_to_oled\Oled_boyy\Oled_boyy.xpr
+# Log file: D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/vivado.log
+# Journal file: D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Uni/Semester4/Project/completed_project_parts/Fifo_to_oled/Oled_boyy/Oled_boyy.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse D:/Uni/Semester4/Project/completed_project_parts/translation_fifo_conection/translation_fifo_conection.srcs/sources_1/new/pulse_stable_conversion.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
