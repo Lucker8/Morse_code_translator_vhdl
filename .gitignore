@@ -1,8 +1,10 @@
 # Everything but sources
 
-Oled_boyy\Oled_boyy.sim
-Oled_boyy\Oled_boyy.runs
-Oled_boyy\Oled_boyy.cache
-Oled_boyy\Oled_boyy.hw
-Oled_boyy\Oled_boyy.ip_user_files
+Oled_boyy/Oled_boyy.sim
+Oled_boyy/Oled_boyy.runs
+Oled_boyy/Oled_boyy.cache
+Oled_boyy/Oled_boyy.hw
+Oled_boyy/Oled_boyy.ip_user_files
 *.log
+
+tt.txt

@@ -34,12 +34,12 @@ use ieee.numeric_std.all;
 
 entity v2 is
  Port (
-        --i: buffer std_logic_vector(0 to 15):="1011101110111000";
+        --inp: in std_logic:='0';
         b1: in std_logic;
         i: in std_logic:='0'; --i for input from adc
         clk: in std_logic;
         out_v: buffer std_logic_vector(0 to 5):=(others=>'0');--:=(others=>'0');
-        o_f,n_w: buffer std_logic:='0';
+        o_f,n_w,new_word: buffer std_logic:='0';
         
         nothing: buffer bit:='1'
         
@@ -75,6 +75,7 @@ counter : process(clk)
                 --temp_o <= (others => '0');
                 suck_me <= '0'; --vector rdy
                 f_c<='1';
+                new_word <= '0';
                
             
             end if;
@@ -176,9 +177,24 @@ counter : process(clk)
                          --out_v<= temp_o;
                          --temp_o <= (others => '0');
                          --index<= 0;
-                    elsif(count > 123000000) then --count is 3* 410 ms## 9 units
+                    elsif(count > 45000000 ) then --count is 7*100 ms## 7 units68000000
                          --it's a new word
-                         --n_w<='1';       
+                         new_word <= '1';
+                         if(dah_f = '0') then
+                            --it's a dit
+                            temp_o(index)<= '0';
+                            --out_v<=temp_o;
+                            index<=index+1;       
+                         elsif(dah_f = '1') then
+                            --suck_me<='1';
+                            --it's a dah
+                            temp_o(index)<='1';
+                            --out_v<=temp_o;
+                            dah_f<='0';
+                            index<=index+1;       
+                         end if;  
+                       
+                         suck_me<='1';      
                     end if;
                     --d_f <= 0;
                     count<=0; --reset the edge counter

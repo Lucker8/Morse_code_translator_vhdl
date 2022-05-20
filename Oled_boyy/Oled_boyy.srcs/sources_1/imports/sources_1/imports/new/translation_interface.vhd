@@ -52,11 +52,11 @@ component v2
          );
 end component;
 
-signal n_wf, b_f ,o_f ,new_word: std_logic:='0';
+signal n_wf, b_f ,o_f ,new_word,new_word_temp,changed: std_logic:='0';
 signal nothing: bit:='1';
 signal sout1 : std_logic;
 signal input:  std_logic_vector(0 to 5);
-signal new_word_temp: std_logic_vector(0 to 1);
+--signal new_word_temp: std_logic_vector(0 to 1):="00";
 begin
 
 dit_in: dit_dah port map(clk,adc_d1,pin_adc(0),pin_adc(1),c_btn,c_led,sout1);
@@ -75,20 +75,19 @@ process(clk)
          end if;
         if(new_word = '1') then
             --output <= "00100000";
-            new_word_temp(0)<='1';
+            new_word_temp<='1';
         end if;
-        if(new_word_temp(1) <= '1') then
-            output <= "00100000";
-            new_word_temp(1) <= '0';    
-        end if;
+       
         
         if(nothing = '1') then --not started yet
-            output<=(others=>'0');
-        else    
-                if(new_word_temp(0) <= '1') then
-                    new_word_temp(1)<='1';
-                    new_word_temp(0)<='0';
-                end if;
+            if (new_word_temp ='1' and changed = '1') then
+                output <= "00100000";
+                new_word_temp<='0';
+                changed<='0';
+            end if;
+            output <= (others=>'0');
+        else
+                changed<='1';    
                 if input(4 to 5) = "00" then --check first 2 bits, 1 sign
                     
                     if input(0) = '0' then -- E
