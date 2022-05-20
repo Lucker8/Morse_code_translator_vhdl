@@ -13,7 +13,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity translation_interface is
   Port ( 
     --i: buffer std_logic:='0';
-    --inp: in std_logic:='0';
+    inp: in std_logic:='0';
 
     adc_d1: in std_logic; --adc d1
     pin_adc: out std_logic_vector(1 downto 0); --adc_cs, adc_sclk
@@ -47,19 +47,20 @@ component v2
         i: in std_logic:='0'; --i for input from adc
         clk: in std_logic;
         out_v: buffer std_logic_vector(0 to 5):=(others=>'0');--:=(others=>'0');
-        o_f,n_w: buffer std_logic;
+        o_f,n_w,new_word: buffer std_logic;
         nothing: buffer bit:='1'
          );
 end component;
 
-signal n_wf, b_f ,o_f : std_logic:='0';
+signal n_wf, b_f ,o_f ,new_word: std_logic:='0';
 signal nothing: bit:='1';
 signal sout1 : std_logic;
 signal input:  std_logic_vector(0 to 5);
+signal new_word_temp: std_logic_vector(0 to 1);
 begin
 
 dit_in: dit_dah port map(clk,adc_d1,pin_adc(0),pin_adc(1),c_btn,c_led,sout1);
-dit: v2 port map(b_f,sout1 ,clk ,input ,o_f,n_wf,nothing);
+dit: v2 port map(b_f,inp ,clk ,input ,o_f,n_wf,new_word,nothing);
 
 
 process(clk)
@@ -72,10 +73,22 @@ process(clk)
         --elsif (n_wf = '1') then
            -- b_f<='0';
          end if;
+        if(new_word = '1') then
+            --output <= "00100000";
+            new_word_temp(0)<='1';
+        end if;
+        if(new_word_temp(1) <= '1') then
+            output <= "00100000";
+            new_word_temp(1) <= '0';    
+        end if;
         
         if(nothing = '1') then --not started yet
             output<=(others=>'0');
-        else
+        else    
+                if(new_word_temp(0) <= '1') then
+                    new_word_temp(1)<='1';
+                    new_word_temp(0)<='0';
+                end if;
                 if input(4 to 5) = "00" then --check first 2 bits, 1 sign
                     
                     if input(0) = '0' then -- E
