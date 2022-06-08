@@ -1,0 +1,819 @@
+
+*** Running vivado
+    with args -log mejn.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mejn.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source mejn.tcl -notrace
+Command: synth_design -top mejn -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 23104 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 704.398 ; gain = 177.086
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mejn' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/mejn.vhd:56]
+INFO: [Synth 8-3491] module 'translation_interface' declared at 'C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/new/translation_interface.vhd:13' bound to instance 'ti' of component 'translation_interface' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/mejn.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'translation_interface' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/new/translation_interface.vhd:31]
+INFO: [Synth 8-3491] module 'dit_dah' declared at 'C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/dit_dah.vhd:37' bound to instance 'dit_in' of component 'dit_dah' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/new/translation_interface.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'dit_dah' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/dit_dah.vhd:48]
+INFO: [Synth 8-3491] module 'pmod_adc' declared at 'C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/pmod_adc.vhd:5' bound to instance 'pmod_adc1' of component 'pmod_adc' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/dit_dah.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'pmod_adc' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/pmod_adc.vhd:15]
+WARNING: [Synth 8-614] signal 'sequncer_shift_reg' is read in the process but is not in the sensitivity list [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/pmod_adc.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'pmod_adc' (1#1) [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/pmod_adc.vhd:15]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/debouncer.vhd:34' bound to instance 'debouncer1' of component 'debouncer' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/dit_dah.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'debouncer' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/debouncer.vhd:41]
+INFO: [Synth 8-3491] module 'FF' declared at 'C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/Downloads/FF.vhd:25' bound to instance 'FF1' of component 'FF' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/debouncer.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'FF' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/Downloads/FF.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'FF' (2#1) [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/Downloads/FF.vhd:32]
+INFO: [Synth 8-3491] module 'FF' declared at 'C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/Downloads/FF.vhd:25' bound to instance 'FF2' of component 'FF' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/debouncer.vhd:58]
+INFO: [Synth 8-3491] module 'FF' declared at 'C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/Downloads/FF.vhd:25' bound to instance 'FF3' of component 'FF' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/debouncer.vhd:59]
+WARNING: [Synth 8-614] signal 'Q1' is read in the process but is not in the sensitivity list [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/debouncer.vhd:60]
+WARNING: [Synth 8-614] signal 'Q2' is read in the process but is not in the sensitivity list [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/debouncer.vhd:60]
+WARNING: [Synth 8-614] signal 'c1' is read in the process but is not in the sensitivity list [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/debouncer.vhd:60]
+WARNING: [Synth 8-614] signal 'count' is read in the process but is not in the sensitivity list [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/debouncer.vhd:60]
+WARNING: [Synth 8-614] signal 'count1' is read in the process but is not in the sensitivity list [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/debouncer.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (3#1) [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/debouncer.vhd:41]
+INFO: [Synth 8-3491] module 'signal_debouncer' declared at 'C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/signal_debouncer.vhd:34' bound to instance 'signal_debouncer1' of component 'signal_debouncer' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/dit_dah.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'signal_debouncer' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/signal_debouncer.vhd:41]
+INFO: [Synth 8-3491] module 'FF' declared at 'C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/Downloads/FF.vhd:25' bound to instance 'FF1' of component 'FF' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/signal_debouncer.vhd:57]
+INFO: [Synth 8-3491] module 'FF' declared at 'C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/Downloads/FF.vhd:25' bound to instance 'FF2' of component 'FF' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/signal_debouncer.vhd:58]
+INFO: [Synth 8-3491] module 'FF' declared at 'C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/Downloads/FF.vhd:25' bound to instance 'FF3' of component 'FF' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/signal_debouncer.vhd:59]
+WARNING: [Synth 8-614] signal 'Q1' is read in the process but is not in the sensitivity list [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/signal_debouncer.vhd:60]
+WARNING: [Synth 8-614] signal 'Q2' is read in the process but is not in the sensitivity list [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/signal_debouncer.vhd:60]
+WARNING: [Synth 8-614] signal 'c1' is read in the process but is not in the sensitivity list [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/signal_debouncer.vhd:60]
+WARNING: [Synth 8-614] signal 'count' is read in the process but is not in the sensitivity list [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/signal_debouncer.vhd:60]
+WARNING: [Synth 8-614] signal 'count1' is read in the process but is not in the sensitivity list [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/signal_debouncer.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'signal_debouncer' (4#1) [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/signal_debouncer.vhd:41]
+WARNING: [Synth 8-614] signal 'flag1' is read in the process but is not in the sensitivity list [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/dit_dah.vhd:88]
+WARNING: [Synth 8-614] signal 'counter' is read in the process but is not in the sensitivity list [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/dit_dah.vhd:88]
+WARNING: [Synth 8-614] signal 'data' is read in the process but is not in the sensitivity list [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/dit_dah.vhd:88]
+WARNING: [Synth 8-614] signal 'flag1' is read in the process but is not in the sensitivity list [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/dit_dah.vhd:114]
+INFO: [Synth 8-256] done synthesizing module 'dit_dah' (5#1) [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/dit_dah.vhd:48]
+INFO: [Synth 8-3491] module 'v2' declared at 'C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/new/v2.vhd:35' bound to instance 'dit' of component 'v2' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/new/translation_interface.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'v2' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/new/v2.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'v2' (6#1) [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/new/v2.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'translation_interface' (7#1) [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/new/translation_interface.vhd:31]
+INFO: [Synth 8-3491] module 'fifo_oled_connection' declared at 'C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_oled_connection.vhd:28' bound to instance 'fifo_oled' of component 'fifo_oled_connection' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/mejn.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'fifo_oled_connection' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_oled_connection.vhd:47]
+INFO: [Synth 8-3491] module 'task1' declared at 'C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/Downloads/debouncer.vhd:34' bound to instance 'db_reset' of component 'task1' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_oled_connection.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'task1' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/Downloads/debouncer.vhd:41]
+INFO: [Synth 8-3491] module 'FF' declared at 'C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/Downloads/FF.vhd:25' bound to instance 'FF1' of component 'FF' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/Downloads/debouncer.vhd:57]
+INFO: [Synth 8-3491] module 'FF' declared at 'C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/Downloads/FF.vhd:25' bound to instance 'FF2' of component 'FF' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/Downloads/debouncer.vhd:58]
+INFO: [Synth 8-3491] module 'FF' declared at 'C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/Downloads/FF.vhd:25' bound to instance 'FF3' of component 'FF' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/Downloads/debouncer.vhd:59]
+WARNING: [Synth 8-614] signal 'Q1' is read in the process but is not in the sensitivity list [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/Downloads/debouncer.vhd:60]
+WARNING: [Synth 8-614] signal 'Q2' is read in the process but is not in the sensitivity list [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/Downloads/debouncer.vhd:60]
+WARNING: [Synth 8-614] signal 'c1' is read in the process but is not in the sensitivity list [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/Downloads/debouncer.vhd:60]
+WARNING: [Synth 8-614] signal 'count' is read in the process but is not in the sensitivity list [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/Downloads/debouncer.vhd:60]
+WARNING: [Synth 8-614] signal 'count1' is read in the process but is not in the sensitivity list [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/Downloads/debouncer.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'task1' (8#1) [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/Downloads/debouncer.vhd:41]
+INFO: [Synth 8-3491] module 'timer_variable' declared at 'C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/timer_variable.vhd:13' bound to instance 'slowclk' of component 'timer_variable' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_oled_connection.vhd:155]
+INFO: [Synth 8-638] synthesizing module 'timer_variable' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/timer_variable.vhd:22]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/timer_variable.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'timer_variable' (9#1) [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/timer_variable.vhd:22]
+INFO: [Synth 8-3491] module 'oled_ctrl' declared at 'C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/oled_ctrl.vhd:13' bound to instance 'oled' of component 'oled_ctrl' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_oled_connection.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'oled_ctrl' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/oled_ctrl.vhd:29]
+INFO: [Synth 8-3491] module 'task1' declared at 'C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/Downloads/debouncer.vhd:34' bound to instance 'print' of component 'task1' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/oled_ctrl.vhd:85]
+INFO: [Synth 8-3491] module 'oled_init' declared at 'C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/oled_init.vhd:12' bound to instance 'Initialize' of component 'oled_init' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/oled_ctrl.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'oled_init' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/oled_init.vhd:25]
+INFO: [Synth 8-3491] module 'spi_ctrl' declared at 'C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/spi_ctrl.vhd:14' bound to instance 'spi_comp' of component 'spi_ctrl' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/oled_init.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'spi_ctrl' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/spi_ctrl.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'spi_ctrl' (10#1) [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/spi_ctrl.vhd:24]
+INFO: [Synth 8-3491] module 'delay' declared at 'C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/delay.vhd:13' bound to instance 'delay_comp' of component 'delay' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/oled_init.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'delay' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/delay.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'delay' (11#1) [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/delay.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'oled_init' (12#1) [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/oled_init.vhd:25]
+INFO: [Synth 8-3491] module 'oled_ex' declared at 'C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/oled_ex.vhd:13' bound to instance 'Example' of component 'oled_ex' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/oled_ctrl.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'oled_ex' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/oled_ex.vhd:26]
+INFO: [Synth 8-3491] module 'spi_ctrl' declared at 'C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/spi_ctrl.vhd:14' bound to instance 'spi_comp' of component 'spi_ctrl' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/oled_ex.vhd:173]
+INFO: [Synth 8-3491] module 'delay' declared at 'C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/delay.vhd:13' bound to instance 'delay_comp' of component 'delay' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/oled_ex.vhd:182]
+INFO: [Synth 8-3491] module 'ascii_rom' declared at 'C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/ascii.vhd:12' bound to instance 'char_lib_comp' of component 'ascii_rom' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/oled_ex.vhd:189]
+INFO: [Synth 8-638] synthesizing module 'ascii_rom' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/ascii.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'ascii_rom' (13#1) [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/ascii.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'oled_ex' (14#1) [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/oled_ex.vhd:26]
+INFO: [Synth 8-226] default block is never used [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/oled_ctrl.vhd:140]
+INFO: [Synth 8-256] done synthesizing module 'oled_ctrl' (15#1) [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/oled_ctrl.vhd:29]
+INFO: [Synth 8-3491] module 'fifo_w_signal_control' declared at 'C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_w_signal_control.vhd:9' bound to instance 'fifo' of component 'fifo_w_signal_control' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_oled_connection.vhd:178]
+INFO: [Synth 8-638] synthesizing module 'fifo_w_signal_control' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_w_signal_control.vhd:26]
+INFO: [Synth 8-3491] module 'ram_8by32' declared at 'C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/Raul/Downloads/ram_8by32.vhd:16' bound to instance 'ram' of component 'ram_8by32' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_w_signal_control.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'ram_8by32' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/Raul/Downloads/ram_8by32.vhd:35]
+	Parameter width bound to: 8 - type: integer 
+	Parameter depth bound to: 32 - type: integer 
+WARNING: [Synth 8-614] signal 'enable_in' is read in the process but is not in the sensitivity list [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/Raul/Downloads/ram_8by32.vhd:37]
+WARNING: [Synth 8-614] signal 'enable_out' is read in the process but is not in the sensitivity list [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/Raul/Downloads/ram_8by32.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'ram_8by32' (16#1) [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/Raul/Downloads/ram_8by32.vhd:35]
+WARNING: [Synth 8-614] signal 'inputflag1' is read in the process but is not in the sensitivity list [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_w_signal_control.vhd:70]
+WARNING: [Synth 8-614] signal 'enable_input' is read in the process but is not in the sensitivity list [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_w_signal_control.vhd:70]
+WARNING: [Synth 8-614] signal 'inputflag2' is read in the process but is not in the sensitivity list [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_w_signal_control.vhd:70]
+WARNING: [Synth 8-614] signal 'outputflag1' is read in the process but is not in the sensitivity list [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_w_signal_control.vhd:123]
+WARNING: [Synth 8-614] signal 'enable_output' is read in the process but is not in the sensitivity list [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_w_signal_control.vhd:123]
+WARNING: [Synth 8-614] signal 'outputflag2' is read in the process but is not in the sensitivity list [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_w_signal_control.vhd:123]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w_signal_control' (17#1) [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_w_signal_control.vhd:26]
+INFO: [Synth 8-3491] module 'pulse_stable_conversion' declared at 'C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/pulse_stable_conversion.vhd:6' bound to instance 'component_input' of component 'pulse_stable_conversion' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_oled_connection.vhd:191]
+INFO: [Synth 8-638] synthesizing module 'pulse_stable_conversion' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/pulse_stable_conversion.vhd:18]
+INFO: [Synth 8-3491] module 'task1' declared at 'C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/Downloads/debouncer.vhd:34' bound to instance 'debounce_clr' of component 'task1' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/pulse_stable_conversion.vhd:36]
+INFO: [Synth 8-3491] module 'task1' declared at 'C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/Downloads/debouncer.vhd:34' bound to instance 'debounce_space' of component 'task1' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/pulse_stable_conversion.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'pulse_stable_conversion' (18#1) [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/pulse_stable_conversion.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'fifo_oled_connection' (19#1) [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_oled_connection.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'mejn' (20#1) [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/mejn.vhd:56]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[31]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[30]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[29]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[28]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[27]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[26]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[25]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[24]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[23]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[22]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[21]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[20]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[19]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[18]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[17]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[16]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[15]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[14]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[13]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[12]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[11]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[10]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[9]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[8]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[7]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[6]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[5]
+WARNING: [Synth 8-3331] design ascii_rom has unconnected port addr[10]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 785.871 ; gain = 258.559
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 785.871 ; gain = 258.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 785.871 ; gain = 258.559
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/constrs_1/new/Mejn_const.xdc]
+Finished Parsing XDC File [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/constrs_1/new/Mejn_const.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/constrs_1/new/Mejn_const.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mejn_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mejn_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 923.383 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 923.383 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 923.383 ; gain = 396.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 923.383 ; gain = 396.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 923.383 ; gain = 396.070
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'ADC_SCLK_reg' into 'clock_state_reg' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/pmod_adc.vhd:96]
+WARNING: [Synth 8-3936] Found unconnected internal register 'din1_shift_reg_reg' and it is trimmed from '16' to '15' bits. [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/pmod_adc.vhd:78]
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'spi_ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'delay'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'oled_ctrl'
+WARNING: [Synth 8-327] inferring latch for variable 'flag1_reg' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/pmod_adc.vhd:49]
+WARNING: [Synth 8-327] inferring latch for variable 'cali1_reg' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/dit_dah.vhd:101]
+WARNING: [Synth 8-327] inferring latch for variable 'cali2_reg' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/dit_dah.vhd:103]
+WARNING: [Synth 8-327] inferring latch for variable 'cali3_reg' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/dit_dah.vhd:105]
+WARNING: [Synth 8-327] inferring latch for variable 'temp_reg' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/dit_dah.vhd:107]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0001 |                               00
+                    send |                             0010 |                               01
+                    done |                             0100 |                               10
+                  iSTATE |                             1000 |                               11
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'spi_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0001 |                               00
+                    hold |                             0010 |                               01
+                    done |                             0100 |                               10
+                  iSTATE |                             1000 |                               11
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'delay'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0001 |                               00
+          oledinitialize |                             0010 |                               01
+             oledexample |                             0100 |                               10
+                    done |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'oled_ctrl'
+WARNING: [Synth 8-327] inferring latch for variable 'inputsignal_reg' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_w_signal_control.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'outputsignal_reg' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_w_signal_control.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 'inputflag2_reg' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_w_signal_control.vhd:107]
+WARNING: [Synth 8-327] inferring latch for variable 'outputflag2_reg' [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/new/fifo_w_signal_control.vhd:161]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 923.383 ; gain = 396.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   3 Input     32 Bit       Adders := 2     
+	   4 Input     12 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 4     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 6     
++---Registers : 
+	              199 Bit    Registers := 2     
+	               32 Bit    Registers := 5     
+	               15 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 4     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 232   
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 9     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 60    
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   3 Input    199 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 5     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 6     
+	  30 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	  30 Input      8 Bit        Muxes := 65    
+	   4 Input      8 Bit        Muxes := 16    
+	   2 Input      7 Bit        Muxes := 4     
+	   4 Input      7 Bit        Muxes := 1     
+	   9 Input      7 Bit        Muxes := 1     
+	   5 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 12    
+	   4 Input      6 Bit        Muxes := 3     
+	   8 Input      6 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	  28 Input      5 Bit        Muxes := 1     
+	  30 Input      5 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 8     
+	   2 Input      3 Bit        Muxes := 4     
+	   4 Input      3 Bit        Muxes := 1     
+	  30 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 153   
+	   4 Input      1 Bit        Muxes := 11    
+	  18 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 4     
+	  28 Input      1 Bit        Muxes := 10    
+	  30 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module pmod_adc 
+Detailed RTL Component Info : 
++---Registers : 
+	              199 Bit    Registers := 2     
+	               15 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   3 Input    199 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 1     
+Module FF 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module debouncer 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module signal_debouncer 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module dit_dah 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     12 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 1     
+Module v2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                6 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 12    
+	   4 Input      6 Bit        Muxes := 2     
+	   8 Input      6 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 23    
+	   4 Input      1 Bit        Muxes := 5     
+Module translation_interface 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 3     
+	   4 Input      7 Bit        Muxes := 1     
+	   9 Input      7 Bit        Muxes := 1     
+	   5 Input      7 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	  18 Input      1 Bit        Muxes := 1     
+Module task1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module timer_variable 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module spi_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+Module delay 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module oled_init 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+	  28 Input      5 Bit        Muxes := 1     
+	  28 Input      1 Bit        Muxes := 10    
+Module ascii_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module oled_ex 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 194   
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	  30 Input     11 Bit        Muxes := 1     
+	  30 Input      8 Bit        Muxes := 65    
+	   4 Input      8 Bit        Muxes := 16    
+	  30 Input      5 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	  30 Input      2 Bit        Muxes := 1     
+	  30 Input      1 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 89    
+Module oled_ctrl 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+Module ram_8by32 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 33    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 5     
+Module fifo_w_signal_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module pulse_stable_conversion 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module fifo_oled_connection 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3936] Found unconnected internal register 'pmod_adc1/din1_shift_reg_reg' and it is trimmed from '15' to '14' bits. [C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.srcs/sources_1/imports/sources_1/imports/SPRO4/pmod_adc.vhd:78]
+WARNING: [Synth 8-6040] Register temp_addr_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[31]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[30]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[29]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[28]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[27]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[26]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[25]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[24]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[23]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[22]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[21]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[20]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[19]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[18]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[17]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[16]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[15]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[14]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[13]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[12]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[11]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[10]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[9]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[8]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[7]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[6]
+WARNING: [Synth 8-3331] design ram_8by32 has unconnected port tail_addr[5]
+INFO: [Synth 8-3886] merging instance 'ti/dit/prev_s_reg' (FD) to 'ti/signal_led_reg'
+INFO: [Synth 8-3886] merging instance 'fifo_oled/oled/Example/temp_delay_ms_reg[0]' (FDE) to 'fifo_oled/oled/Example/temp_delay_ms_reg[11]'
+INFO: [Synth 8-3886] merging instance 'fifo_oled/oled/Example/temp_delay_ms_reg[1]' (FDE) to 'fifo_oled/oled/Example/temp_delay_ms_reg[11]'
+INFO: [Synth 8-3886] merging instance 'fifo_oled/oled/Example/temp_delay_ms_reg[2]' (FDE) to 'fifo_oled/oled/Example/temp_delay_ms_reg[11]'
+INFO: [Synth 8-3886] merging instance 'fifo_oled/oled/Example/after_char_state_reg[3]' (FDE) to 'fifo_oled/oled/Example/after_char_state_reg[2]'
+INFO: [Synth 8-3886] merging instance 'fifo_oled/oled/Example/after_update_state_reg[4]' (FDE) to 'fifo_oled/oled/Example/after_update_state_reg[0]'
+INFO: [Synth 8-3886] merging instance 'fifo_oled/oled/Example/after_update_state_reg[2]' (FDE) to 'fifo_oled/oled/Example/after_update_state_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fifo_oled/oled/Example /\after_char_state_reg[1] )
+INFO: [Synth 8-3886] merging instance 'fifo_oled/oled/Example/temp_delay_ms_reg[3]' (FDE) to 'fifo_oled/oled/Example/temp_delay_ms_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fifo_oled/oled/Example/temp_delay_ms_reg[4]' (FDE) to 'fifo_oled/oled/Example/temp_delay_ms_reg[11]'
+INFO: [Synth 8-3886] merging instance 'fifo_oled/oled/Example/temp_delay_ms_reg[5]' (FDE) to 'fifo_oled/oled/Example/temp_delay_ms_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fifo_oled/oled/Example/temp_delay_ms_reg[6]' (FDE) to 'fifo_oled/oled/Example/temp_delay_ms_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fifo_oled/oled/Example/temp_delay_ms_reg[7]' (FDE) to 'fifo_oled/oled/Example/temp_delay_ms_reg[9]'
+INFO: [Synth 8-3886] merging instance 'fifo_oled/oled/Example/temp_delay_ms_reg[8]' (FDE) to 'fifo_oled/oled/Example/temp_delay_ms_reg[9]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\fifo_oled/oled/Example /\temp_delay_ms_reg[9] )
+INFO: [Synth 8-3886] merging instance 'fifo_oled/oled/Example/temp_delay_ms_reg[10]' (FDE) to 'fifo_oled/oled/Example/temp_delay_ms_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fifo_oled/oled/Example /\temp_delay_ms_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ti/\dit_in/result_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fifo_oled/oled/Initialize/temp_dc_reg )
+WARNING: [Synth 8-3332] Sequential element (fifo_oled/oled/Initialize/spi_comp/FSM_onehot_current_state_reg[3]) is unused and will be removed from module mejn.
+WARNING: [Synth 8-3332] Sequential element (fifo_oled/oled/Initialize/delay_comp/FSM_onehot_current_state_reg[3]) is unused and will be removed from module mejn.
+WARNING: [Synth 8-3332] Sequential element (spi_comp/FSM_onehot_current_state_reg[3]) is unused and will be removed from module oled_ex.
+WARNING: [Synth 8-3332] Sequential element (delay_comp/FSM_onehot_current_state_reg[3]) is unused and will be removed from module oled_ex.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 923.383 ; gain = 396.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+---------------------------------------+---------------+----------------+
+|Module Name | RTL Object                            | Depth x Width | Implemented As | 
++------------+---------------------------------------+---------------+----------------+
+|oled_init   | after_state                           | 32x1          | LUT            | 
+|oled_init   | after_state                           | 32x5          | LUT            | 
+|oled_init   | temp_sdata                            | 32x1          | LUT            | 
+|oled_init   | temp_sdata                            | 32x8          | LUT            | 
+|oled_ex     | after_state                           | 32x1          | LUT            | 
+|oled_ex     | temp_addr                             | 32x1          | LUT            | 
+|oled_ex     | after_state                           | 32x1          | LUT            | 
+|oled_ex     | temp_addr                             | 32x1          | LUT            | 
+|oled_ex     | char_lib_comp/dout_reg                | 1024x8        | Block RAM      | 
+|mejn        | fifo_oled/oled/Initialize/after_state | 32x5          | LUT            | 
+|mejn        | fifo_oled/oled/Initialize/temp_sdata  | 32x8          | LUT            | 
+|mejn        | fifo_oled/oled/Initialize/after_state | 32x1          | LUT            | 
+|mejn        | fifo_oled/oled/Initialize/temp_sdata  | 32x1          | LUT            | 
++------------+---------------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance fifo_oled/oled/Example/i_1/char_lib_comp/dout_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 923.383 ; gain = 396.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 923.383 ; gain = 396.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance fifo_oled/oled/Example/char_lib_comp/dout_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 934.160 ; gain = 406.848
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 938.824 ; gain = 411.512
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 938.824 ; gain = 411.512
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 938.824 ; gain = 411.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 938.824 ; gain = 411.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 938.832 ; gain = 411.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 938.832 ; gain = 411.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     3|
+|2     |CARRY4   |   231|
+|3     |LUT1     |    41|
+|4     |LUT2     |   876|
+|5     |LUT3     |   211|
+|6     |LUT4     |   199|
+|7     |LUT5     |   153|
+|8     |LUT6     |   343|
+|9     |MUXF7    |    90|
+|10    |MUXF8    |    28|
+|11    |RAMB18E1 |     1|
+|12    |FDCE     |   133|
+|13    |FDRE     |  2474|
+|14    |FDSE     |   112|
+|15    |LD       |    48|
+|16    |LDC      |     2|
+|17    |LDP      |     3|
+|18    |IBUF     |     7|
+|19    |OBUF     |    10|
++------+---------+------+
+
+Report Instance Areas: 
++------+------------------------+------------------------+------+
+|      |Instance                |Module                  |Cells |
++------+------------------------+------------------------+------+
+|1     |top                     |                        |  4965|
+|2     |  fifo_oled             |fifo_oled_connection    |  3492|
+|3     |    component_input     |pulse_stable_conversion |    87|
+|4     |      debounce_clr      |task1_14                |    36|
+|5     |        FF1             |FF_19                   |     1|
+|6     |        FF2             |FF_20                   |     2|
+|7     |        FF3             |FF_21                   |     3|
+|8     |      debounce_space    |task1_15                |    37|
+|9     |        FF1             |FF_16                   |     1|
+|10    |        FF2             |FF_17                   |     2|
+|11    |        FF3             |FF_18                   |     4|
+|12    |    db_reset            |task1                   |    35|
+|13    |      FF1               |FF_11                   |     1|
+|14    |      FF2               |FF_12                   |     2|
+|15    |      FF3               |FF_13                   |     2|
+|16    |    fifo                |fifo_w_signal_control   |   752|
+|17    |      ram               |ram_8by32               |   437|
+|18    |    oled                |oled_ctrl               |  2511|
+|19    |      Example           |oled_ex                 |  2308|
+|20    |        char_lib_comp   |ascii_rom               |     5|
+|21    |        delay_comp      |delay_9                 |    56|
+|22    |        spi_comp        |spi_ctrl_10             |    50|
+|23    |      Initialize        |oled_init               |   161|
+|24    |        delay_comp      |delay                   |    59|
+|25    |        spi_comp        |spi_ctrl                |    49|
+|26    |      print             |task1_5                 |    35|
+|27    |        FF1             |FF_6                    |     1|
+|28    |        FF2             |FF_7                    |     2|
+|29    |        FF3             |FF_8                    |     2|
+|30    |    slowclk             |timer_variable          |    54|
+|31    |  ti                    |translation_interface   |  1453|
+|32    |    dit                 |v2                      |   476|
+|33    |    dit_in              |dit_dah                 |   867|
+|34    |      debouncer1        |debouncer               |    35|
+|35    |        FF1             |FF_2                    |     1|
+|36    |        FF2             |FF_3                    |     2|
+|37    |        FF3             |FF_4                    |     2|
+|38    |      pmod_adc1         |pmod_adc                |   600|
+|39    |      signal_debouncer1 |signal_debouncer        |    36|
+|40    |        FF1             |FF                      |     1|
+|41    |        FF2             |FF_0                    |     2|
+|42    |        FF3             |FF_1                    |     4|
++------+------------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 938.832 ; gain = 411.520
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 43 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 938.832 ; gain = 274.008
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 938.832 ; gain = 411.520
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 403 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 954.852 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 53 instances were transformed.
+  LD => LDCE: 48 instances
+  LDC => LDCE: 2 instances
+  LDP => LDPE: 3 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+113 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 954.852 ; gain = 662.863
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 954.852 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/peter/Desktop/Elec Bsc/4th semester/SPRO4/Fifo_to_oled_v3/Oled_boyy/Oled_boyy.runs/synth_1/mejn.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mejn_utilization_synth.rpt -pb mejn_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May 26 13:06:34 2022...
