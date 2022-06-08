@@ -1,7 +1,0 @@
-Running: xsim.dir/fifo_oled_connection_behav/xsimk.exe -simmode gui -wdb fifo_oled_connection_behav.wdb -simrunnum 0 -socket 51771
-Design successfully loaded
-Design Loading Memory Usage: 6420 KB (Peak: 6420 KB)
-Design Loading CPU Usage: 15 ms
-Simulation completed
-Simulation Memory Usage: 15340 KB (Peak: 15340 KB)
-Simulation CPU Usage: 16062 ms

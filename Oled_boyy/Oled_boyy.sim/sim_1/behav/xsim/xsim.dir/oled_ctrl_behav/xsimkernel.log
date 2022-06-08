@@ -1,7 +1,0 @@
-Running: xsim.dir/oled_ctrl_behav/xsimk.exe -simmode gui -wdb oled_ctrl_behav.wdb -simrunnum 0 -socket 54187
-Design successfully loaded
-Design Loading Memory Usage: 5860 KB (Peak: 5860 KB)
-Design Loading CPU Usage: 0 ms
-Simulation completed
-Simulation Memory Usage: 6464 KB (Peak: 6464 KB)
-Simulation CPU Usage: 31 ms
